@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #e5e7eb;
+  background: #05070d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --bg: #05070d;
+  --surface: #0b1120;
+  --surface-2: #101827;
+  --line: rgba(148, 163, 184, 0.18);
+  --muted: #94a3b8;
+  --green: #00e5a8;
+  --cyan: #22d3ee;
+  --violet: #a78bfa;
+  --amber: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(0, 229, 168, 0.08), transparent 24rem),
+    radial-gradient(circle at 88% 20%, rgba(34, 211, 238, 0.07), transparent 28rem),
+    var(--bg);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+::selection {
+  color: #05070d;
+  background: var(--green);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: linear-gradient(145deg, rgba(16, 24, 39, 0.92), rgba(8, 13, 22, 0.9));
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.24);
+}
+
+.panel::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.025), transparent 30%);
+}
+
+.panel-hover {
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.panel-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 229, 168, 0.38);
+  box-shadow: 0 20px 55px rgba(0, 229, 168, 0.06);
+}
+
+.system-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--green);
+  box-shadow: 0 0 18px rgba(0, 229, 168, 0.72);
+}
+
+.scanline {
+  background: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.012) 50%);
+  background-size: 100% 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

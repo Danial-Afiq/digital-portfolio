@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#05070d"/>
+  <path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200M0 420h1200M0 490h1200M0 560h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630" stroke="#22d3ee" opacity=".08"/>
+  <rect x="82" y="84" width="1036" height="462" rx="24" fill="#0b1120" stroke="#00e5a8" stroke-opacity=".4"/>
+  <text x="140" y="220" font-family="monospace" font-size="24" fill="#00e5a8">SYSTEM ONLINE // DANIAL AFIQ</text>
+  <text x="140" y="315" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#e5e7eb">Security-Aware</text>
+  <text x="140" y="390" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#e5e7eb">Software Engineer</text>
+  <text x="140" y="464" font-family="monospace" font-size="24" fill="#94a3b8">SOFTWARE // CYBERSECURITY // DEVOPS</text>
+</svg>
