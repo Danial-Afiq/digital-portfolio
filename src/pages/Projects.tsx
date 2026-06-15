@@ -85,7 +85,7 @@ export function Projects() {
   const [active, setActive] = useState<ProjectCategory | "All">("All");
   const [sort, setSort] = useState<SortKey>("impressive");
   const [view, setView] = useState<View>(
-    () => (localStorage.getItem("projects-view") as View) || "grid",
+    () => (localStorage.getItem("projects-view") as View) || "list",
   );
 
   useEffect(() => {
