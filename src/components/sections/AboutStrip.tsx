@@ -26,7 +26,7 @@ export function AboutStrip() {
 
           {/* Right: about copy + skills */}
           <div>
-            <SectionHeading eyebrow="About" title="Security-aware, product-minded" />
+            <SectionHeading eyebrow="About" title="Hi, I'm Danial Afiq." />
             <div className="space-y-4 text-base leading-relaxed text-ink-soft">
               {profile.about.map((para, i) => (
                 <p key={i}>{para}</p>

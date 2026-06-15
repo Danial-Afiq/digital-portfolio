@@ -18,8 +18,7 @@ export const profile: Profile = {
     { label: "Seeking", value: "Software / Security Engineering internships" },
     { label: "Based in", value: "Singapore" },
   ],
-  // Old portrait from the previous site is in use; replace public/images/portrait.jpg
-  // with your newer photo (square, ~640px) to update it.
+
   photo: "images/portrait.jpg",
   email: "danial.afiq.official@gmail.com",
   githubUrl: "https://github.com/Danial-Afiq",
