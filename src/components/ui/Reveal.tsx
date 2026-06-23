@@ -32,8 +32,10 @@ export function Reveal({
         }
       },
       // Negative bottom margin pulls the trigger line up the viewport, so a
-      // section must be scrolled further in before it reveals.
-      { threshold: 0.15, rootMargin: "0px 0px -12% 0px" },
+      // section must be scrolled further in before it reveals. threshold 0
+      // (reveal as soon as the edge crosses the line) so sections taller than
+      // the viewport — e.g. a single-column grid on mobile — still trigger.
+      { threshold: 0, rootMargin: "0px 0px -12% 0px" },
     );
     observer.observe(el);
     return () => observer.disconnect();
