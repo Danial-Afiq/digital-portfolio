@@ -27,8 +27,13 @@ export function SelectedProjects() {
           Cybersecurity practice, AI competition work, and earlier builds.
         </SectionHeading>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {rest.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {rest.map((project, i) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              // On mobile (single column) cap the list at 4 cards; show all from sm up.
+              className={i >= 4 ? "max-sm:hidden" : ""}
+            />
           ))}
         </div>
       </Container>

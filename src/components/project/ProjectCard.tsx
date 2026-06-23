@@ -7,11 +7,11 @@ import { ProjectLinkButtons } from "./ProjectLinkButtons";
 import { TechChip, StatusBadge, CategoryChip } from "../ui/Chip";
 
 /** Compact card with a thumbnail, for grids (Projects page, Selected on Home). */
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, className = "" }: { project: Project; className?: string }) {
   const link = primaryLink(project);
 
   return (
-    <article className="card card-hover group relative flex flex-col overflow-hidden">
+    <article className={`card card-hover group relative flex flex-col overflow-hidden ${className}`}>
       <ScreenshotFrame
         src={coverOf(project)}
         alt={`${project.title} preview`}
